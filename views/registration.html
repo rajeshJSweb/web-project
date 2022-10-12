@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/js/bootstrap.bundle.min.js">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <div class="col">
+            <img  height="40" width="40" src="/image/logo.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="/addStudent.html" class="btn">Add New Student</a>
+              </li>
+            </ul>
+            <div>
+              <img class="rounded-circle" height="30" width="30" src="/image/logo.png" alt="">
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+    <main class="vh-100">
+        <section class="d-flex justify-content-center align-items-center vh-100">
+          <div>
+            <div>
+              <h3 class="text-center">User Registration</h3>
+              <form class="mt-4">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="Text" class="form-control" id="userName">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                  <label for="phoneNumber" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="phoneNumber">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <button type="submit" class="btn btn-primary text-center">Registration</button>
+              </form>
+            </div>
+            <hr class="hr" />
+            <div class="text-center">
+                <h6>Allready user? | <a href="/index.html" class="btn btn-outline-success">Login</a></h6>
+            </div>
+          </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>
