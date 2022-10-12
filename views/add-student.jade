@@ -18,14 +18,16 @@ html(lang='en')
                     #navbarScroll.collapse.navbar-collapse
                         ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll(style='--bs-scroll-height: 100px;')
                             li.nav-item
-                                a.nav-link.active(aria-current='page' href='/index.html') Home
+                                a.nav-link.active(aria-current='page' href='/') Home
                             li.nav-item
                                 a.btn About
                             li.nav-item
                                 a.btn Contact
                             li.nav-item
+                                a.btn(href='/student-list') Student List
+                                li.nav-item
                                 a.btn(href='/add-student') Add New Student
-                        button.btn.btn-outline-success Login
+                        button.btn.btn-outline-success(href='/login') Login
         main.vh-100
             section.d-flex.justify-content-center.align-items-center.vh-100
                 div
