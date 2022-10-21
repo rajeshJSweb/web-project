@@ -32,19 +32,19 @@ html(lang='en')
                 div
                     div
                         h3.text-center User Registration
-                        form.mt-4
+                        form.mt-4(action='/registration', method='post')
                             .mb-3
-                                label.form-label(for='name') Full Name
-                                input#userName.form-control(type='Text')
+                                label.form-label(for='userName') Full Name
+                                input#userName.form-control(type='Text' name='name')
                             .mb-3
                                 label.form-label(for='exampleInputEmail1') Email address
-                                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+                                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' name='email')
                             .mb-3
                                 label.form-label(for='exampleInputPassword1') Password
-                                input#exampleInputPassword1.form-control(type='password')
+                                input#exampleInputPassword1.form-control(type='password' name='password')
                             .mb-3
                                 label.form-label(for='phoneNumber') Phone Number
-                                input#phoneNumber.form-control(type='text')
+                                input#phoneNumber.form-control(type='text' name='phone')
                                 #emailHelp.form-text We'll never share your email with anyone else.
                             button.btn.btn-primary.text-center(type='submit') Registration
                     hr.hr
