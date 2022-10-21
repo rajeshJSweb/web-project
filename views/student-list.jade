@@ -39,42 +39,14 @@ html(lang='en')
                             th(scope='col') #
                             th(scope='col') Fullname
                             th(scope='col') Email
-                            th(scope='col') Student Id
-                            th(scope='col') Department
-                            th(scope='col') Phone Number
-                            th(scope='col') Gender
+                            th(scope='col') Phone
                     tbody
-                        tr
-                            th(scope='row') 1
-                            td Rajes Khoksi
-                            td rjshkhoksi@gmail.com
-                            td 2018200010004
-                            td CSE
-                            td 017141216
-                            td Male
-                        tr
-                            th(scope='row') 1
-                            td Rajes Khoksi
-                            td rjshkhoksi@gmail.com
-                            td 2018200010004
-                            td CSE
-                            td 017141216
-                            td Male
-                        tr
-                            th(scope='row') 1
-                            td Rajes Khoksi
-                            td rjshkhoksi@gmail.com
-                            td 2018200010004
-                            td CSE
-                            td 017141216
-                            td Male
-                        tr
-                            th(scope='row') 1
-                            td Rajes Khoksi
-                            td rjshkhoksi@gmail.com
-                            td 2018200010004
-                            td CSE
-                            td 017141216
-                            td Male
+                        - each item in students
+                            tr
+                                th(scope='row') 1
+                                td #{item.name}
+                                td #{item.email}
+                                td #{item.phone}
+
         script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js' integrity='sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3' crossorigin='anonymous')
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js' integrity='sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk' crossorigin='anonymous')
