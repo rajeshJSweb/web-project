@@ -39,13 +39,19 @@ html(lang='en')
                             th(scope='col') #
                             th(scope='col') Fullname
                             th(scope='col') Email
-                            th(scope='col') Phone
+                            th(scope='col') Student Id
+                            th(scope='col') Department
+                            th(scope='col') Phone Number
+
                     tbody
                         - each item in students
                             tr
                                 th(scope='row') 1
                                 td #{item.name}
                                 td #{item.email}
+                                td #{item.id}
+                                td #{item.department}
+                                td #{item.phone}
                                 td #{item.phone}
 
         script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js' integrity='sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3' crossorigin='anonymous')

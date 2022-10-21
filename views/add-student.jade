@@ -33,37 +33,27 @@ html(lang='en')
                 div
                     div
                         h3.text-center Add New Student
-                        form.mt-4
+                        form.mt-4(action='/add-student' method='post')
                             .mb-2
                                 label.form-label(for='name') Full Name
-                                input#userName.form-control(type='Text')
+                                input#userName.form-control(type='Text' name='name')
                             .mb-2
                                 label.form-label(for='exampleInputEmail1') Email address
-                                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+                                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' name='email')
                                 #emailHelp.form-text We'll never share your email with anyone else.
                             .mb-2
                                 label.form-label(for='studentId') Student Id
-                                input#studentId.form-control(type='text')
+                                input#studentId.form-control(type='text' name='id')
                             div
                                 label.form-label(for='exampleInputPassword1') Department
-                                select.form-select(aria-label='Default select example')
+                                select.form-select(aria-label='Default select example' name='department')
                                     option(selected='') Open this select menu
-                                    option(value='1') CSE
-                                    option(value='2') EEE
-                                    option(value='3') BBA
+                                    option(value='CSE') CSE
+                                    option(value='EEE') EEE
+                                    option(value='EEE') EEE
                             .mb-2
                                 label.form-label(for='phoneNumber') Phone Number
-                                input#phoneNumber.form-control(type='text')
-                            div
-                                label.form-label(for='phoneNumber') Gender
-                                .form-check
-                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
-                                    label.form-check-label(for='flexRadioDefault1')
-                                        | Male
-                                .form-check
-                                    input#flexRadioDefault2.form-check-input(type='radio' name='flexRadioDefault' checked='')
-                                    label.form-check-label(for='flexRadioDefault2')
-                                        | Female
+                                input#phoneNumber.form-control(type='text' name='phone')
                             button#studentBtn.btn.btn-primary.text-center.mt-3(onsubmit='handleAddStudent()' type='submit') Add New
         script(src='/js/bootstrap.bundle.min.js')
         script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js' integrity='sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3' crossorigin='anonymous')
